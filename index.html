@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logos.png" class="logos">
+            <ul id="sidemenu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+
+        </nav>
+        <div class="detel">
+            <h1>I'm Meshak<span> Eugene</span></h1>
+            <p>this is my portfolio website to show all 
+                <br> Details and work 
+            </p>
+        <a href="images/resumeee.pdf">VIEW RESUME </a>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/meshu.jpg" class="meshu">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>Hi this is Mesh! FullStack Web Developer,<br>
+                           App developer and a Python Programmer.<br>
+                        <br>
+                        Languages known: Python,Html,Css,Javascript,React,Angular<br>
+                        Database: SQL,MongoDB<br>
+                        Operating System: Windows,Linux.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills">
+            <div class="container">
+                <h1 class="subtitle">My Skills</h1>
+                <div class="skills-list">
+                    <div>
+                        <h2>Web designer</h2>
+                        <br>
+                        <p>simpleweb page design,web activities using html,css,javascript and reactjs</p>
+                    </div>
+                    <div>
+                        <h2>App Developer</h2>
+                        <br>
+                        <p>devolop apps in React-native Platform.Create,test and program apps for mobile devices</p>
+                    </div>
+                    <div>
+                        <h2>Python  Programmer</h2>
+                        <br>
+                        <p>Developed py.games and works on python machine learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-sharp fa-regular fa-envelope"></i>meshakeugene@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>9150859457</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/meshakeugenee"><i class="fa-brands fa-github"></i></a>
+                            
+
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheets">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <button type="submit" class="btn">submit</button>
+                        </form>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class ="images">
+            <img src="images/shape.jpeg" class="shape">
+            <img src="images/mesha.png" class="mesha">
+        </div>
+    <script src="mesh.js"></script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
